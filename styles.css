@@ -1,0 +1,87 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+@font-face {
+  font-family: principal;
+  src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+  background-color: var(--Grey-900);
+}
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.article-card {
+  width: 220px;
+  background-color: var(--Grey-800);
+  border: 1px;
+  border-radius: 8px;
+}
+.div-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px 10px 25px;
+}
+.div-card img {
+  border-radius: 50%;
+  width: 50px;
+  margin-top: 6px;
+}
+.person {
+  font-family: principal;
+  color: var(--White);
+  font-size: 15px;
+}
+.div-card h2 {
+  color: var(--Green);
+  font-family: principal;
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+.div-card p {
+  font-family: principal;
+  font-size: 8px;
+  color: var(--White);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.div-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 20px 20px 20px;
+}
+.div-buttons button {
+  background-color: var(--Grey-700);
+  color: var(--White);
+  border-radius: 4px;
+  min-height: 25px;
+  border: none;
+  cursor: pointer;
+  transform:
+    background-colo 0,
+    3s else,
+    color 0,
+    3s else;
+}
+.div-buttons button:hover {
+  background-color: var(--Green);
+  color: var(--Grey-900);
+}
